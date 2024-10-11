@@ -10,13 +10,12 @@ export const Admin = () => {
       id: crypto.randomUUID(),
       type: "post",
       title: postTitle,
-      author: "Marcus Gruber",
+      author: "Max",
       publishDate: new Date().toISOString().split("T")[0],
       status: "published",
       content: postText,
-      image: "https://picsum.photos/400/400",
+      image: "someImage",
     };
-    console.log(crypto.randomUUID().length);
 
     try {
       const response = await fetch("http://localhost:3001/newPost", {
