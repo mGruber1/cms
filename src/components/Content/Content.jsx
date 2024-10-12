@@ -20,9 +20,10 @@ export const Content = () => {
             <CardHeader className="border-0 bg-white">
               <h1>{element.title}</h1>
             </CardHeader>
-            <CardBody className="d-flex justify-content-between position-relative">
-              <p>{element.content}</p>
-            </CardBody>
+            <CardBody
+              className="d-flex justify-content-between position-relative"
+              dangerouslySetInnerHTML={{ __html: element.content }}
+            ></CardBody>
           </Card>
         </Col>
       </Row>

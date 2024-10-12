@@ -39,7 +39,7 @@ export const ContentGrid = (props) => {
                 <CardBody className="p-0 text-center">
                   <div className="w-100 h-100 position-relative">
                     {element.image.length !== 0 ? (
-                      <Image src={element.image} />
+                      <Image src={element.image} alt="image" />
                     ) : (
                       <div
                         className="bg-dark"
@@ -47,7 +47,7 @@ export const ContentGrid = (props) => {
                       />
                     )}
 
-                    <h1 className="position-absolute top-0 text-white p-2">
+                    <h1 className="position-absolute top-0 text-white p-2 text-center w-100">
                       {element.title}
                     </h1>
                     <div className="position-absolute bottom-0 p-2 d-flex justify-content-between w-100 text-white">
